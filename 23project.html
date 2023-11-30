@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Glowing Apple logo</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.apple{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    background: #252422;
+}
+
+.apple i{
+    font-size: 8em;
+    color: #f5f5f5;
+}
+
+.apple .apple-2{
+    animation: anim 2s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        text-shadow: 0 0 50px #fff,
+    0 0 75px #fff,
+    0 0 90px #fff;
+    }
+    30%{
+        text-shadow: 0 0 50px#343dea,
+    0 0 75px #343dea,
+    0 0 90px #343dea;
+    }
+    70%{
+        text-shadow: 0 0 50px #fff200,
+    0 0 75px #fff200,
+    0 0 90px #fff200;
+    }
+    100%{
+        text-shadow: 0 0 50px #dd03ff,
+    0 0 75px #dd03ff,
+    0 0 90px #dd03ff;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="apple">
+        <i class="fa-brands fa-apple apple-2"></i>
+    </div>
+</body>
+</html>
